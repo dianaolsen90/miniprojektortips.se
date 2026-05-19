@@ -3,367 +3,236 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>MiniLux, Pro & Ultra – Komplett Guide 2026 | miniprojekter.se</title>
-<meta name="description" content="Allt om MiniLux, MiniLux Pro och MiniLux Ultra. Specifikationer, jämförelse och köpguide för dig som vill ha bästa miniprojektor 2026."/>
-<link rel="canonical" href="https://www.miniprojekter.se/projektorer"/>
+<title>TeknikPulsen – Elektronik, projektorer och smarta hem</title>
+<meta name="description" content="Oberoende blogg om elektronik och projektorer. Guider, tester och tips från erfarna experter."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
 <style>
-:root{--bg:#09090b;--bg2:#111113;--bg3:#18181b;--border:#27272a;--border2:#3f3f46;--text:#fafafa;--muted:#a1a1aa;--dim:#52525b;--cyan:#22d3ee;--cyan-dim:rgba(34,211,238,0.08);--green:#4ade80;--red:#f87171}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:60px;background:rgba(9,9,11,0.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-.logo{font-size:0.95rem;font-weight:600;letter-spacing:0.05em;color:var(--text);text-decoration:none}
-.logo span{color:var(--cyan)}
-.nav-link{color:var(--muted);text-decoration:none;font-size:0.82rem;font-weight:500;transition:color 0.2s}
-.nav-link:hover{color:var(--text)}
-.nav-actions{display:flex;align-items:center;gap:1.25rem}
-.nav-pill{background:var(--cyan);color:var(--bg);font-size:0.78rem;font-weight:700;padding:0.38rem 1rem;border-radius:100px;text-decoration:none;transition:opacity 0.2s}
-.nav-pill:hover{opacity:0.85}
-.hero{position:relative;min-height:92vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 2rem 5rem;overflow:hidden}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:60px 60px;opacity:0.25}
-.hero-glow{position:absolute;top:-200px;right:-100px;width:700px;height:700px;background:radial-gradient(circle,rgba(34,211,238,0.06) 0%,transparent 65%);pointer-events:none}
-.hero-inner{position:relative;z-index:1;max-width:1100px;margin:0 auto;width:100%}
-.eyebrow-pill{display:inline-flex;align-items:center;gap:0.5rem;font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--cyan);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1.5rem;border:1px solid rgba(34,211,238,0.2);padding:0.3rem 0.8rem;border-radius:100px;background:rgba(34,211,238,0.04)}
-.eyebrow-pill::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--cyan);animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-.hero h1{font-size:clamp(3rem,7vw,6.5rem);font-weight:700;line-height:0.95;letter-spacing:-0.03em;margin-bottom:2rem;color:var(--text)}
-.hero h1 .hl{color:var(--cyan)}
-.hero h1 .dm{color:var(--dim)}
-.hero-sub{font-size:1.05rem;color:var(--muted);max-width:520px;margin-bottom:3rem;line-height:1.65}
-.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
-.btn-p{background:var(--cyan);color:var(--bg);font-weight:700;font-size:0.88rem;padding:0.7rem 1.8rem;border-radius:8px;text-decoration:none;transition:opacity 0.2s}
-.btn-p:hover{opacity:0.85}
-.btn-g{border:1px solid var(--border2);color:var(--muted);font-weight:500;font-size:0.88rem;padding:0.7rem 1.8rem;border-radius:8px;text-decoration:none;transition:all 0.2s}
-.btn-g:hover{border-color:var(--muted);color:var(--text)}
-.hero-stats{display:flex;gap:3rem;margin-top:4rem;padding-top:2rem;border-top:1px solid var(--border)}
-.stat-n{font-size:2rem;font-weight:700;letter-spacing:-0.04em}
-.stat-l{font-size:0.72rem;color:var(--dim);margin-top:0.1rem;text-transform:uppercase;letter-spacing:0.08em}
-.wrap{max-width:1100px;margin:0 auto;padding:0 2rem}
-section{padding:5rem 0;border-top:1px solid var(--border)}
-.ey{font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--cyan);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem}
-.h2{font-size:clamp(1.8rem,3vw,2.8rem);font-weight:700;letter-spacing:-0.03em;line-height:1.1;margin-bottom:0.5rem}
-.lead{color:var(--muted);max-width:540px;margin-bottom:3.5rem;font-size:0.97rem}
-.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:16px;overflow:hidden}
-.feat{background:var(--bg2);padding:2rem 2.2rem;display:flex;gap:1.2rem;align-items:flex-start}
-.feat-dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);flex-shrink:0;margin-top:0.45rem}
-.feat h4{font-size:0.97rem;font-weight:600;margin-bottom:0.35rem}
-.feat p{font-size:0.85rem;color:var(--muted);line-height:1.6}
-.model{display:grid;grid-template-columns:1fr 1.3fr;border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:1.5rem;transition:border-color 0.3s}
-.model:hover{border-color:var(--border2)}
-.model.feat-border{border-color:rgba(34,211,238,0.3)}
-.model.rev{direction:rtl}.model.rev>*{direction:ltr}
-.model-vis{background:var(--bg3);min-height:300px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.model-vis::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 60% 40%,rgba(34,211,238,0.06),transparent 60%)}
-.m-num{font-size:8rem;font-weight:800;color:rgba(255,255,255,0.03);letter-spacing:-0.06em;position:relative;z-index:1}
-.m-badge{position:absolute;top:1rem;left:1rem;font-family:'JetBrains Mono',monospace;font-size:0.63rem;font-weight:500;letter-spacing:0.1em;padding:0.22rem 0.65rem;border-radius:100px;text-transform:uppercase}
-.be{background:var(--bg2);color:var(--muted);border:1px solid var(--border2)}
-.bp{background:rgba(34,211,238,0.1);color:var(--cyan);border:1px solid rgba(34,211,238,0.3)}
-.bu{background:var(--text);color:var(--bg);border:none}
-.model-body{padding:2.5rem;display:flex;flex-direction:column;justify-content:center;background:var(--bg2)}
-.m-name{font-size:1.7rem;font-weight:700;letter-spacing:-0.03em;margin-bottom:0.25rem}
-.m-tag{font-size:0.82rem;color:var(--muted);margin-bottom:1.5rem}
-.m-desc{font-size:0.92rem;color:var(--muted);margin-bottom:2rem;line-height:1.65}
-.specs{display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:2rem}
-.spec{background:var(--bg3);border:1px solid var(--border);padding:0.6rem 0.8rem;border-radius:8px}
-.sk{font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--dim);letter-spacing:0.08em;text-transform:uppercase}
-.sv{font-size:0.88rem;font-weight:600;margin-top:0.15rem}
-.mbtn{display:inline-block;font-weight:700;font-size:0.82rem;padding:0.65rem 1.5rem;border-radius:8px;text-decoration:none;align-self:flex-start;transition:opacity 0.2s}
-.mbtn:hover{opacity:0.85}
-.mbtn-s{background:var(--text);color:var(--bg)}
-.mbtn-o{background:transparent;color:var(--text);border:1px solid var(--border2)}
-.mbtn-o:hover{border-color:var(--text)}
-.table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:16px}
-table{width:100%;border-collapse:collapse;font-size:0.88rem}
-thead th{background:var(--bg3);padding:1rem 1.2rem;text-align:left;font-weight:600;border-bottom:1px solid var(--border);color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em}
-thead th:first-child{color:var(--dim)}
-td{padding:0.85rem 1.2rem;border-bottom:1px solid var(--border);color:var(--muted)}
-td:first-child{color:var(--text);font-weight:500}
-tr:last-child td{border-bottom:none}
-tr:hover td{background:var(--bg2)}
-.yes{color:var(--green)}.no{color:var(--red)}
-.hl td{background:var(--cyan-dim)}
-.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.gcard{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:1.8rem;transition:border-color 0.3s}
-.gcard:hover{border-color:var(--border2)}
-.gcard-ico{font-size:1.5rem;margin-bottom:1rem}
-.gcard-title{font-size:1rem;font-weight:600;margin-bottom:0.5rem}
-.gcard-text{font-size:0.88rem;color:var(--muted);line-height:1.6}
-.steps{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--border);border-radius:16px;overflow:hidden}
-.step{padding:1.8rem 1.4rem;border-right:1px solid var(--border);background:var(--bg2)}
-.step:last-child{border-right:none}
-.step-n{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--cyan);letter-spacing:0.1em;margin-bottom:0.8rem}
-.step h4{font-size:0.9rem;font-weight:600;margin-bottom:0.4rem}
-.step p{font-size:0.8rem;color:var(--muted);line-height:1.55}
-.use-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:0.8rem;margin-bottom:3rem}
-.uc{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.4rem 1rem;text-align:center;transition:border-color 0.25s,transform 0.25s}
-.uc:hover{border-color:var(--cyan);transform:translateY(-3px)}
-.uc-ico{font-size:1.5rem;margin-bottom:0.5rem}
-.uc h4{font-size:0.82rem;font-weight:600;margin-bottom:0.3rem}
-.uc p{font-size:0.75rem;color:var(--dim);line-height:1.5}
-.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:16px;overflow:hidden}
-.ti2{background:var(--bg2);padding:2rem 1.5rem;text-align:center}
-.ti2-ico{font-size:1.3rem;margin-bottom:0.6rem;display:block;color:var(--cyan)}
-.ti2 h4{font-size:0.9rem;font-weight:600;margin-bottom:0.3rem}
-.ti2 p{font-size:0.8rem;color:var(--muted);line-height:1.5}
-.faq-item{border-bottom:1px solid var(--border)}
-.faq-btn{width:100%;background:none;border:none;color:var(--text);text-align:left;padding:1.3rem 0;font-family:'Space Grotesk',sans-serif;font-size:0.97rem;font-weight:500;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color 0.2s}
-.faq-btn:hover{color:var(--cyan)}
-.faq-ico{color:var(--dim);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s}
-.faq-item.open .faq-ico{transform:rotate(45deg);color:var(--cyan)}
-.faq-ans{max-height:0;overflow:hidden;color:var(--muted);font-size:0.92rem;line-height:1.7;transition:max-height 0.4s ease,padding 0.3s}
-.faq-item.open .faq-ans{max-height:300px;padding-bottom:1.3rem}
-footer{border-top:1px solid var(--border);padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.fl{font-size:0.88rem;font-weight:600;color:var(--dim);text-decoration:none;letter-spacing:0.04em}
-.fl span{color:var(--cyan)}
-footer p{font-size:0.78rem;color:var(--dim)}
-.fa{color:var(--dim);text-decoration:none;font-size:0.8rem;transition:color 0.2s}
-.fa:hover{color:var(--text)}
-@media(max-width:900px){
-  .model,.model.rev{grid-template-columns:1fr;direction:ltr}
-  .model.rev>*{direction:ltr}
-  .cards3,.feat-grid{grid-template-columns:1fr 1fr}
-  .steps,.use-strip,.trust{grid-template-columns:1fr 1fr}
-  .step{border-right:none;border-bottom:1px solid var(--border)}
-}
-@media(max-width:600px){
-  .cards3,.use-strip,.trust{grid-template-columns:1fr}
-  .hero-stats{gap:1.5rem;flex-wrap:wrap}
-  .specs{grid-template-columns:1fr}
-}
+body{background:#f9f8f6;color:#1c1c1e;font-family:'Source Sans 3',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+nav{background:#1c1c1e;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;position:sticky;top:0;z-index:100}
+.brand{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:#fff;text-decoration:none}
+.brand em{font-style:italic;color:#6bc5a0}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.8rem;font-weight:600;color:rgba(255,255,255,.5);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.banner{background:#1c1c1e;color:#fff;text-align:center;padding:4rem 2rem 3.5rem;border-bottom:4px solid #6bc5a0}
+.banner-sub{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#6bc5a0;margin-bottom:.8rem}
+.banner h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.15;max-width:620px;margin:0 auto .9rem}
+.banner p{font-size:.97rem;color:rgba(255,255,255,.55);max-width:480px;margin:0 auto}
+.wrap{max-width:1060px;margin:0 auto;padding:2.5rem 2rem 4rem}
+.section-label{font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#999;margin-bottom:1.5rem;padding-bottom:.6rem;border-bottom:1px solid #e5e3de}
+
+/* FEATURED */
+.featured{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;margin-bottom:3rem;align-items:center}
+.feat-img{background:#e8f4f0;border-radius:10px;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;font-size:.75rem;color:#bbb}
+.feat-pill{display:inline-block;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .65rem;border-radius:3px;margin-bottom:.8rem}
+.feat-body h2{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:700;line-height:1.2;margin-bottom:.8rem;color:#1c1c1e}
+.feat-body p{font-size:.93rem;color:#555;line-height:1.7;margin-bottom:1rem}
+.feat-meta{font-size:.77rem;color:#aaa;display:flex;gap:.6rem;align-items:center;margin-bottom:1.2rem}
+.sep{width:3px;height:3px;border-radius:50%;background:#d5d3cf;display:inline-block}
+.read-btn{display:inline-block;background:#1c1c1e;color:#fff;font-size:.83rem;font-weight:600;padding:.6rem 1.4rem;border-radius:6px;text-decoration:none;transition:background .2s}
+.read-btn:hover{background:#333}
+.feat-author{display:flex;align-items:center;gap:.6rem;margin-top:1rem;padding-top:1rem;border-top:1px solid #ebebeb}
+.av-sm{width:28px;height:28px;border-radius:50%;background:#d5f0e6;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1e7a52;flex-shrink:0}
+.feat-author-info{font-size:.78rem}
+.feat-author-info strong{color:#1c1c1e;font-weight:600}
+.feat-author-info span{color:#aaa}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
+.card{background:#fff;border:1px solid #ebebeb;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 6px 24px rgba(0,0,0,.07);transform:translateY(-2px)}
+.card-img{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:.72rem;color:#bbb}
+.ci-test{background:#e8f4f0}.ci-guide{background:#eaecf5}.ci-tips{background:#f5f2e8}.ci-tek{background:#f0ecf8}.ci-jmf{background:#f5ecea}
+.card-body{padding:1.2rem;display:flex;flex-direction:column;flex:1}
+.pill{display:inline-block;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .65rem;border-radius:3px;margin-bottom:.7rem;align-self:flex-start}
+.p-test{background:#e0f4ec;color:#1e7a52}
+.p-guide{background:#e8f0fb;color:#2a55b0}
+.p-tips{background:#fef6e0;color:#a07010}
+.p-tek{background:#f2ecfb;color:#6030a0}
+.p-jmf{background:#fdecea;color:#b02020}
+.card-title{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:700;line-height:1.35;color:#1c1c1e;margin-bottom:.45rem}
+.card-excerpt{font-size:.82rem;color:#666;line-height:1.6;flex:1}
+.card-foot{margin-top:1rem;padding-top:.8rem;border-top:1px solid #f5f4f2;display:flex;justify-content:space-between;align-items:center;font-size:.72rem;color:#bbb}
+.card-auth{display:flex;align-items:center;gap:.4rem}
+.av-xs{width:20px;height:20px;border-radius:50%;background:#d5f0e6;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;color:#1e7a52}
+.av-xs.pb{background:#e8edf5;color:#2a55b0}
+
+footer{background:#1c1c1e;padding:2.5rem 2rem;text-align:center}
+.foot-brand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.3);margin-bottom:.3rem}
+.foot-brand em{font-style:italic;color:#6bc5a0}
+footer p{font-size:.78rem;color:rgba(255,255,255,.25)}
+
+@media(max-width:860px){.featured{grid-template-columns:1fr}.feat-img{display:none}.grid{grid-template-columns:1fr 1fr}.nav-links{display:none}}
+@media(max-width:540px){.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
 <nav>
-  <a class="logo" href="https://www.miniprojekter.se"><span>MINI</span>PROJEKTER.SE</a>
-  <div class="nav-actions">
-    <a class="nav-link" href="om-oss.html">Om oss</a>
-    <a class="nav-pill" href="https://www.miniprojekter.se">Köp nu →</a>
-  </div>
+  <a class="brand" href="index.html">Teknik<em>Pulsen</em></a>
+  <ul class="nav-links">
+    <li><a href="#">Tester</a></li>
+    <li><a href="#">Guider</a></li>
+    <li><a href="#">Tips</a></li>
+    <li><a href="#">Jämförelser</a></li>
+  </ul>
 </nav>
+<div class="banner">
+  <div class="banner-sub">Oberoende teknikblogg sedan 2023</div>
+  <h1>Elektronik, projektorer och smarta hem</h1>
+  <p>Vi testar, granskar och guidar. Inga betalda rekommendationer, inga reklamlöften.</p>
+</div>
+<div class="wrap">
 
-<div class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-inner">
-    <div class="eyebrow-pill">Produktguide · Uppdaterad 2026</div>
-    <h1>MINILUX<br><span class="dm">PRO</span> &amp; <span class="hl">ULTRA</span></h1>
-    <p class="hero-sub">Tre modeller. En serie. Vi bryter ner varje specifikation, jämför dem sida vid sida och hjälper dig välja rätt — på under 10 minuter.</p>
-    <div class="hero-actions">
-      <a class="btn-p" href="#modeller">Utforska modellerna</a>
-      <a class="btn-g" href="#jamfor">Se jämförelsetabell</a>
+  <div class="section-label">Veckans artikel</div>
+  <div class="featured">
+    <div class="feat-img">[ Omslagsbild ]</div>
+    <div class="feat-body">
+      <span class="pill p-test">Test</span>
+      <h2>MiniLux Pro genomtestad: WiFi 6, autofokus och roterbar fot</h2>
+      <p>Vi testade MiniLux Pro i fyra veckor i vardagsmiljö. Lever uppgraderingarna mot basmodellen upp till prislappen? Vår mest detaljerade projektortest hittills.</p>
+      <div class="feat-meta">
+        <span>18 jan 2026</span><span class="sep"></span><span>13 min</span>
+      </div>
+      <a class="read-btn" href="minilux-pro-test.html">Lasa artikeln</a>
+      <div class="feat-author">
+        <div class="av-sm">PB</div>
+        <div class="feat-author-info"><strong>Per Bergman</strong> <span>- Teknikexpert med 12 ars erfarenhet</span></div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div><div class="stat-n">12K+</div><div class="stat-l">Nöjda kunder</div></div>
-      <div><div class="stat-n">4.8</div><div class="stat-l">Snittbetyg</div></div>
-      <div><div class="stat-n">90d</div><div class="stat-l">Returrätt</div></div>
-      <div><div class="stat-n">2d</div><div class="stat-l">Leverans</div></div>
-    </div>
+  </div>
+
+  <div class="section-label">Alla artiklar</div>
+  <div class="grid">
+
+    <a class="card" href="minilux-test.html">
+      <div class="card-img ci-test">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-test">Test</span>
+        <div class="card-title">MiniLux testad: kompakt projektor med inbyggt batteri</div>
+        <p class="card-excerpt">Tre veckors test i olika miljoer. Inbyggt batteri, native 1080p och Android. Vi ger var arliga dom.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>1 feb 2026</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="projektor-eller-tv.html">
+      <div class="card-img ci-guide">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-guide">Guide</span>
+        <div class="card-title">Projektor eller TV: vilket passar ditt hem bast?</div>
+        <p class="card-excerpt">En arlig genomgang av bada alternativen. Storlek per krona, bildkvalitet och flexibilitet.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>8 feb 2026</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="ansi-lumen.html">
+      <div class="card-img ci-tek">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-tek">Teknik</span>
+        <div class="card-title">Vad betyder ANSI Lumen och hur manga behover du?</div>
+        <p class="card-excerpt">Siffrorna pa forpackningen sager sallan hela sanningen. Vi reder ut vad du faktiskt behover veta.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>25 jan 2026</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="forsta-projektor-tips.html">
+      <div class="card-img ci-tips">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-tips">Tips</span>
+        <div class="card-title">6 saker du bor veta innan du koper din forsta projektor</div>
+        <p class="card-excerpt">Det dar som sallan star i produktbeskrivningarna. Var experter delar med sig av vad de onstar att de visste fran borjan.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>14 jan 2026</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="minilux-vs-pro.html">
+      <div class="card-img ci-jmf">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-jmf">Jamforelse</span>
+        <div class="card-title">MiniLux vs MiniLux Pro: ar uppgraderingen vard pengarna?</div>
+        <p class="card-excerpt">Vi har testat bada. Fraган om prisdifferensen ar vard det beror helt pa hur du tanker anvanda projektorn.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>20 dec 2025</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="sovrum-projektor.html">
+      <div class="card-img ci-guide">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-guide">Guide</span>
+        <div class="card-title">Komplett guide: projicering i sovrummet utan att stora</div>
+        <p class="card-excerpt">Rotationsfot, horlurar och autofokus. Allt du behoöver for en perfekt sovrumsupplevelse.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>2 jan 2026</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="wifi-5-vs-6.html">
+      <div class="card-img ci-tek">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-tek">Teknik</span>
+        <div class="card-title">WiFi 5 vs WiFi 6 i projektorer: spelar det verkligen roll?</div>
+        <p class="card-excerpt">Marknadsforingsnummer eller verklig skillnad? Vi testar i verkliga hem.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>8 jan 2026</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="utomhusbio.html">
+      <div class="card-img ci-tips">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-tips">Tips</span>
+        <div class="card-title">Utomhusbio pa terrassen: en praktisk startguide</div>
+        <p class="card-excerpt">Film pa 120 tum mot husvaggen. Enklare an du tror och imponerar alltid pa gaster.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>12 dec 2025</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="android-projektor.html">
+      <div class="card-img ci-tek">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-tek">Teknik</span>
+        <div class="card-title">Android i projektorer: vad du faktiskt kan gora med det</div>
+        <p class="card-excerpt">Streaming, spegling och appar. Vi gar igenom vad inbyggt Android innebar i praktiken.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>5 dec 2025</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="kontrastratio.html">
+      <div class="card-img ci-tek">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-tek">Teknik</span>
+        <div class="card-title">Kontrastratio i projektorer: vad siffran faktiskt betyder</div>
+        <p class="card-excerpt">En av de mest anvanda specifikationerna i marknadsforing och minst forstadda av kopare.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>3 nov 2025</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="projiceringsduk.html">
+      <div class="card-img ci-guide">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-guide">Guide</span>
+        <div class="card-title">Valja projiceringsduk: storlek, material och vad du behoöver</div>
+        <p class="card-excerpt">En vit vagg funkar. Men ratt duk gor det battre. Vi gar igenom vad som faktiskt spelar roll.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>25 okt 2025</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="ljud-till-projektor.html">
+      <div class="card-img ci-tips">[ Bild ]</div>
+      <div class="card-body">
+        <span class="pill p-tips">Tips</span>
+        <div class="card-title">Ljud till din projektor: tre alternativ och vilket passar dig</div>
+        <p class="card-excerpt">Bilden ar en sak. Ljudet avgor om upplevelsen faktiskt engagerar. Har ar tre realistiska alternativ.</p>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>15 okt 2025</span></div>
+      </div>
+    </a>
+
   </div>
 </div>
 
-<section>
-  <div class="wrap">
-    <p class="ey">Bakgrund</p>
-    <h2 class="h2">Vad är en miniprojektor?</h2>
-    <p class="lead">En kompakt projektor under 1 kg som projicerar 30–200 tum på valfri yta — hemma, på resa eller utomhus.</p>
-    <div class="feat-grid">
-      <div class="feat"><div class="feat-dot"></div><div><h4>Portabilitet</h4><p>Extremt lätt och kompakt — ryms i handväskan utan ansträngning. Ta med den överallt.</p></div></div>
-      <div class="feat"><div class="feat-dot"></div><div><h4>Trådlös frihet</h4><p>WiFi 5 / 6 / 6E + Bluetooth. Spegla mobil, surfplatta eller dator utan ett enda kabel-trassel.</p></div></div>
-      <div class="feat"><div class="feat-dot"></div><div><h4>LED- och DLP-teknik</h4><p>Lång lamptid, låg strömförbrukning och skarpa färger utan uppvärmningstid.</p></div></div>
-      <div class="feat"><div class="feat-dot"></div><div><h4>Android inbyggt</h4><p>Netflix, YouTube, Disney+ och Spotify direkt ur lådan — inga donglar eller extra enheter.</p></div></div>
-      <div class="feat"><div class="feat-dot"></div><div><h4>Inbyggt batteri</h4><p>MiniLux-basmodellen kör helt sladdlöst — perfekt för camping, utomhusbio och sovrumsfilm.</p></div></div>
-      <div class="feat"><div class="feat-dot"></div><div><h4>Prisvärdhet</h4><p>Marknadens bästa förhållande pris/prestanda. Storbild utan storbioprislapp.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="modeller">
-  <div class="wrap">
-    <p class="ey">Modeller</p>
-    <h2 class="h2">Tre nivåer. En serie.</h2>
-    <p class="lead">Välj modellen som matchar ditt användningsfall — från bärbart batteri till kompromisslös bildkvalitet.</p>
-
-    <div class="model">
-      <div class="model-vis">
-        <span class="m-badge be">Entry-level</span>
-        <div class="m-num">01</div>
-      </div>
-      <div class="model-body">
-        <div class="m-name">MiniLux</div>
-        <div class="m-tag">Din ingång till storbild</div>
-        <p class="m-desc">Kompakt, lätt och helt kabelobunden med inbyggt batteri. Perfekt för sovrummet, studentlyan, campingen — eller när du vill ha storbildsupplevelse utan krångel.</p>
-        <div class="specs">
-          <div class="spec"><div class="sk">Upplösning</div><div class="sv">1080p Native</div></div>
-          <div class="spec"><div class="sk">Ljusstyrka</div><div class="sv">350 ANSI lm</div></div>
-          <div class="spec"><div class="sk">Anslutning</div><div class="sv">WiFi 5 + BT</div></div>
-          <div class="spec"><div class="sk">Batteri</div><div class="sv">Inbyggt ~2h</div></div>
-        </div>
-        <a class="mbtn mbtn-o" href="https://www.miniprojekter.se/minilux">Se MiniLux →</a>
-      </div>
-    </div>
-
-    <div class="model rev feat-border">
-      <div class="model-vis">
-        <span class="m-badge bp">Bästsäljare</span>
-        <div class="m-num">02</div>
-      </div>
-      <div class="model-body">
-        <div class="m-name">MiniLux Pro</div>
-        <div class="m-tag">Det smarta valet för de flesta</div>
-        <p class="m-desc">WiFi 6, automatisk keystone-korrigering och en roterbar fot som låter dig projicera rakt i taket på en sekund. Det kloka uppgraderingssteget.</p>
-        <div class="specs">
-          <div class="spec"><div class="sk">Upplösning</div><div class="sv">1080p Full HD</div></div>
-          <div class="spec"><div class="sk">Ljusstyrka</div><div class="sv">480 ANSI lm</div></div>
-          <div class="spec"><div class="sk">WiFi</div><div class="sv">WiFi 6 Dual Band</div></div>
-          <div class="spec"><div class="sk">Fokus</div><div class="sv">Auto + Manuell</div></div>
-        </div>
-        <a class="mbtn mbtn-s" href="https://www.miniprojekter.se/minilux-pro">Se MiniLux Pro →</a>
-      </div>
-    </div>
-
-    <div class="model">
-      <div class="model-vis">
-        <span class="m-badge bu">Premium</span>
-        <div class="m-num">03</div>
-      </div>
-      <div class="model-body">
-        <div class="m-name">MiniLux Ultra</div>
-        <div class="m-tag">Inga kompromisser — punkt</div>
-        <p class="m-desc">700 ANSI Lumen, AI-autofokus och Dolby Audio. Upp till 200 tum med 4K-stöd. Klarar halvljusa rum. För den som vägrar nöja sig.</p>
-        <div class="specs">
-          <div class="spec"><div class="sk">Upplösning</div><div class="sv">4K UHD Support</div></div>
-          <div class="spec"><div class="sk">Ljusstyrka</div><div class="sv">700 ANSI lm</div></div>
-          <div class="spec"><div class="sk">Ljud</div><div class="sv">Dolby Audio</div></div>
-          <div class="spec"><div class="sk">Fokus</div><div class="sv">AI Autofokus</div></div>
-        </div>
-        <a class="mbtn mbtn-o" href="https://www.miniprojekter.se/minilux-ultra">Se MiniLux Ultra →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="jamfor">
-  <div class="wrap">
-    <p class="ey">Specifikationer</p>
-    <h2 class="h2">Jämförelsetabell</h2>
-    <p class="lead" style="margin-bottom:2rem">Alla siffror sida vid sida.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Egenskap</th><th>MiniLux</th><th>MiniLux Pro</th><th>MiniLux Ultra</th></tr></thead>
-        <tbody>
-          <tr><td>Native upplösning</td><td>1080p</td><td>1080p</td><td>1080p / 4K stöd</td></tr>
-          <tr><td>Ljusstyrka</td><td>350 ANSI lm</td><td>480 ANSI lm</td><td>700 ANSI lm</td></tr>
-          <tr><td>Kontrastratio</td><td>1000:1</td><td>1500:1</td><td>3000:1</td></tr>
-          <tr><td>WiFi-standard</td><td>WiFi 5</td><td>WiFi 6</td><td>WiFi 6E</td></tr>
-          <tr><td>Bluetooth</td><td>5.0</td><td>5.2</td><td>5.3</td></tr>
-          <tr><td>Autofokus</td><td class="no">✕</td><td class="yes">✓ Hybrid</td><td class="yes">✓ AI</td></tr>
-          <tr class="hl"><td>Auto Keystone</td><td class="no">✕</td><td class="yes">✓ 4-punkt</td><td class="yes">✓ 6D Auto</td></tr>
-          <tr><td>Roterbar fot</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Inbyggt batteri</td><td class="yes">✓ ~2h</td><td class="no">✕</td><td class="no">✕</td></tr>
-          <tr><td>Dolby Audio</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✓</td></tr>
-          <tr><td>Android</td><td>11</td><td>13</td><td>13</td></tr>
-          <tr><td>Max bildstorlek</td><td>120"</td><td>150"</td><td>200"</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section id="valja">
-  <div class="wrap">
-    <p class="ey">Köpguide</p>
-    <h2 class="h2">Vilken passar dig?</h2>
-    <p class="lead">Svaret beror på hur och var du tänker använda den.</p>
-    <div class="cards3">
-      <div class="gcard"><div class="gcard-ico">🏕️</div><div class="gcard-title">Välj MiniLux</div><p class="gcard-text">Du vill ha frihet. Camping, studentlyan, sängen — utan eluttag. Inbyggt batteri ger ~2 timmars film utan sladd.</p></div>
-      <div class="gcard" style="border-color:rgba(34,211,238,0.25)"><div class="gcard-ico">🎬</div><div class="gcard-title">Välj MiniLux Pro</div><p class="gcard-text">Du vill ha det bästa för pengarna. WiFi 6, autofokus och rotationsfot. Rätt val för 90% av alla användare.</p></div>
-      <div class="gcard"><div class="gcard-ico">🎭</div><div class="gcard-title">Välj MiniLux Ultra</div><p class="gcard-text">Dedikerat biorum, regelbundna filmkvällar, 200 tum, ljud som inte kräver extern högtalare. Ingen kompromiss.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <p class="ey">Kom igång</p>
-    <h2 class="h2">Upp & igång på 5 minuter</h2>
-    <p class="lead" style="margin-bottom:2rem">Från kartong till 150 tum på väggen.</p>
-    <div class="steps">
-      <div class="step"><div class="step-n">// 01</div><h4>Placera</h4><p>Stabilt underlag eller rotationsfot för takprojicering. Inget stativ behövs.</p></div>
-      <div class="step"><div class="step-n">// 02</div><h4>Anslut</h4><p>HDMI eller WiFi-spegling från mobil, dator eller surfplatta.</p></div>
-      <div class="step"><div class="step-n">// 03</div><h4>Fokusera</h4><p>Auto-keystone rätar bilden. AI-autofokus (Ultra) justerar skärpa på en sekund.</p></div>
-      <div class="step"><div class="step-n">// 04</div><h4>Ljud</h4><p>Inbyggda högtalare eller extern Bluetooth-högtalare för bästa upplevelse.</p></div>
-      <div class="step"><div class="step-n">// 05</div><h4>Njut</h4><p>Dämpa ljuset. Upp till 200 tum storbild — direkt ur lådan.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <p class="ey">Användningsområden</p>
-    <h2 class="h2">För varje tillfälle</h2>
-    <p class="lead" style="margin-bottom:2rem">En miniprojektor passar fler situationer än du kanske tror.</p>
-    <div class="use-strip">
-      <div class="uc"><div class="uc-ico">🎬</div><h4>Hemmabio</h4><p>Filmkväll i sovrummet eller utomhusbio på 150 tum.</p></div>
-      <div class="uc"><div class="uc-ico">🎮</div><h4>Gaming</h4><p>Konsol eller PC via HDMI. Storbild med låg latens.</p></div>
-      <div class="uc"><div class="uc-ico">📊</div><h4>Presentationer</h4><p>Möten och föreläsningar — professionellt resultat.</p></div>
-      <div class="uc"><div class="uc-ico">✈️</div><h4>Resor</h4><p>Ryms i handbagage. Perfekt för hotellet.</p></div>
-      <div class="uc"><div class="uc-ico">🏕️</div><h4>Utomhus</h4><p>Camping och terrass — helt kabelobundet.</p></div>
-    </div>
-    <div class="trust">
-      <div class="ti2"><span class="ti2-ico">🚚</span><h4>Fri frakt</h4><p>PostNord & DHL. Alltid inkluderat.</p></div>
-      <div class="ti2"><span class="ti2-ico">💬</span><h4>Kundtjänst</h4><p>Svarar snabbt. Mån–fre 08–17.</p></div>
-      <div class="ti2"><span class="ti2-ico">🔒</span><h4>Säker betalning</h4><p>Klarna, Visa, Mastercard, Apple Pay.</p></div>
-      <div class="ti2"><span class="ti2-ico">↩️</span><h4>90 dagar retur</h4><p>Prova hemma. Returnera om du inte är nöjd.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <p class="ey">FAQ</p>
-    <h2 class="h2">Vanliga frågor</h2>
-    <p class="lead" style="margin-bottom:2.5rem">De vanligaste frågorna — besvarade.</p>
-    <div class="faq-item">
-      <button class="faq-btn">Kan jag streama Netflix direkt? <span class="faq-ico">+</span></button>
-      <div class="faq-ans">Ja. Alla tre modeller kör Android med stöd för Netflix, Disney+, YouTube och Spotify — direkt ur lådan.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-btn">Hur stor bild kan jag projicera? <span class="faq-ico">+</span></button>
-      <div class="faq-ans">MiniLux: upp till 120". MiniLux Pro: 150". MiniLux Ultra: 200" — beroende på projiceringsavstånd och omgivningsljus.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-btn">Behöver jag en dedikerad duk? <span class="faq-ico">+</span></button>
-      <div class="faq-ans">Nej. En vit, plan vägg fungerar bra för vardagsbruk. En duk förbättrar kontrast och färger — särskilt i ljusare rum.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-btn">Vad innebär 4K-stöd kontra native 4K? <span class="faq-ico">+</span></button>
-      <div class="faq-ans">4K-stöd (Ultra) tar emot 4K-signal men skalar till panelns upplösning. Resultatet är märkbart skarpare än native 1080p för de flesta.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-btn">Erbjuder miniprojekter.se fri frakt? <span class="faq-ico">+</span></button>
-      <div class="faq-ans">Ja — alltid fri frakt inom Sverige med PostNord och DHL. Leveranstid normalt 2 arbetsdagar.</div>
-    </div>
-  </div>
-</section>
-
 <footer>
-  <a class="fl" href="https://www.miniprojekter.se"><span>MINI</span>PROJEKTER.SE</a>
-  <a class="fa" href="https://www.miniprojekter.se/om-oss">Om oss</a>
-  <p>&copy; 2026 miniprojekter.se</p>
+  <div class="foot-brand">Teknik<em>Pulsen</em></div>
+  <p>Oberoende teknikblogg &copy; 2026</p>
 </footer>
-
-<script>
-document.querySelectorAll('.faq-btn').forEach(b=>{
-  b.addEventListener('click',()=>{
-    const it=b.parentElement,open=it.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-    if(!open)it.classList.add('open');
-  });
-});
-</script>
 </body>
 </html>
