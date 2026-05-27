@@ -7,251 +7,170 @@
 <meta name="description" content="Oberoende blogg om elektronik och projektorer. Guider, tester och tips från erfarna experter."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="site.css"/>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{background:#f9f8f6;color:#1c1c1e;font-family:'Source Sans 3',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
-.banner{background:#1c1c1e;color:#fff;text-align:center;padding:4rem 2rem 3.5rem;border-bottom:4px solid #6bc5a0}
-.banner-sub{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#6bc5a0;margin-bottom:.8rem}
-.banner h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.15;max-width:620px;margin:0 auto .9rem}
-.banner p{font-size:.97rem;color:rgba(255,255,255,.55);max-width:480px;margin:0 auto}
-.wrap{max-width:1060px;margin:0 auto;padding:2.5rem 2rem 4rem}
-.section-label{font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#999;margin-bottom:1.5rem;padding-bottom:.6rem;border-bottom:1px solid #e5e3de}
-
-/* FEATURED */
-.featured{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;margin-bottom:3rem;align-items:center}
-.feat-img{background:#e8f4f0;border-radius:10px;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;font-size:.75rem;color:#bbb}
-.feat-pill{display:inline-block;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .65rem;border-radius:3px;margin-bottom:.8rem}
-.feat-body h2{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:700;line-height:1.2;margin-bottom:.8rem;color:#1c1c1e}
-.feat-body p{font-size:.93rem;color:#555;line-height:1.7;margin-bottom:1rem}
-.feat-meta{font-size:.77rem;color:#aaa;display:flex;gap:.6rem;align-items:center;margin-bottom:1.2rem}
-.sep{width:3px;height:3px;border-radius:50%;background:#d5d3cf;display:inline-block}
-.read-btn{display:inline-block;background:#1c1c1e;color:#fff;font-size:.83rem;font-weight:600;padding:.6rem 1.4rem;border-radius:6px;text-decoration:none;transition:background .2s}
-.read-btn:hover{background:#333}
-.feat-author{display:flex;align-items:center;gap:.6rem;margin-top:1rem;padding-top:1rem;border-top:1px solid #ebebeb}
-.av-sm{width:28px;height:28px;border-radius:50%;background:#d5f0e6;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1e7a52;flex-shrink:0}
-.feat-author-info{font-size:.78rem}
-.feat-author-info strong{color:#1c1c1e;font-weight:600}
-.feat-author-info span{color:#aaa}
-
-/* GRID */
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
-.card{background:#fff;border:1px solid #ebebeb;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
-.card:hover{box-shadow:0 6px 24px rgba(0,0,0,.07);transform:translateY(-2px)}
-.card-img{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:.72rem;color:#bbb}
-.ci-test{background:#e8f4f0}.ci-guide{background:#eaecf5}.ci-tips{background:#f5f2e8}.ci-tek{background:#f0ecf8}.ci-jmf{background:#f5ecea}
-.card-body{padding:1.2rem;display:flex;flex-direction:column;flex:1}
-.pill{display:inline-block;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .65rem;border-radius:3px;margin-bottom:.7rem;align-self:flex-start}
-.p-test{background:#e0f4ec;color:#1e7a52}
-.p-guide{background:#e8f0fb;color:#2a55b0}
-.p-tips{background:#fef6e0;color:#a07010}
-.p-tek{background:#f2ecfb;color:#6030a0}
-.p-jmf{background:#fdecea;color:#b02020}
-.card-title{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:700;line-height:1.35;color:#1c1c1e;margin-bottom:.45rem}
-.card-excerpt{font-size:.82rem;color:#666;line-height:1.6;flex:1}
-.card-foot{margin-top:1rem;padding-top:.8rem;border-top:1px solid #f5f4f2;display:flex;justify-content:space-between;align-items:center;font-size:.72rem;color:#bbb}
-.card-auth{display:flex;align-items:center;gap:.4rem}
-.av-xs{width:20px;height:20px;border-radius:50%;background:#d5f0e6;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;color:#1e7a52}
-.av-xs.pb{background:#e8edf5;color:#2a55b0}
-
-@media(max-width:860px){.featured{grid-template-columns:1fr}.feat-img{display:none}.grid{grid-template-columns:1fr 1fr}}
-@media(max-width:540px){.grid{grid-template-columns:1fr}}
-</style>
 </head>
 <body>
-<nav>
-  <a class="brand" href="index.html">Teknik<em>Pulsen</em></a>
-  <ul class="nav-links">
-    <li><a href="tester.html">Tester</a></li>
-    <li><a href="guider.html">Guider</a></li>
-    <li><a href="tips.html">Tips</a></li>
-    <li><a href="jamforelser.html">Jämförelser</a></li>
-    <li><a href="teknik.html">Teknik</a></li>
-  </ul>
-</nav>
-<div class="banner">
-  <div class="banner-sub">Oberoende teknikblogg sedan 2023</div>
-  <h1>Elektronik, projektorer och smarta hem</h1>
-  <p>Vi testar, granskar och guidar. Inga betalda rekommendationer, inga reklamlöften.</p>
+<nav class="site-nav"><div class="nav-inner">
+<a class="nav-brand" href="index.html"><span class="logo-mark">TP</span><span class="logo-text">TeknikPulsen</span></a>
+<ul class="nav-links"><li><a href="tester.html">Tester</a></li><li><a href="guider.html">Guider</a></li><li><a href="tips.html">Tips</a></li><li><a href="jamforelser.html">Jämförelser</a></li><li><a href="teknik.html">Teknik</a></li></ul>
+<button class="nav-newsletter" type="button">Nyhetsbrev</button>
+</div></nav>
+<div class="filter-bar">
+<a class="filter-pill active" href="index.html">Alla</a>
+<a class="filter-pill" href="tester.html">Tester</a>
+<a class="filter-pill" href="guider.html">Guider</a>
+<a class="filter-pill" href="tips.html">Tips</a>
+<a class="filter-pill" href="teknik.html">Teknik</a>
+<a class="filter-pill" href="jamforelser.html">Jämförelser</a>
 </div>
-<div class="wrap">
-
-  <div class="section-label">Veckans artikel</div>
-  <div class="featured">
-    <div class="feat-img">[ Omslagsbild ]</div>
-    <div class="feat-body">
-      <span class="pill p-test">Test</span>
-      <h2>MiniLux Pro genomtestad: 200 ANSI och 130 tums bild</h2>
-      <p>Vi testade MiniLux Pro i fyra veckor. 200 ANSI Lumen, XGA-upplösning och 180 graders roterbar lins. Är den värd 1 499 kr?</p>
-      <div class="feat-meta">
-        <span>18 jan 2026</span><span class="sep"></span><span>13 min</span>
-      </div>
-      <a class="read-btn" href="minilux-pro-test.html">Läsa artikeln</a>
-      <div class="feat-author">
-        <div class="av-sm">PB</div>
-        <div class="feat-author-info"><strong>Per Bergman</strong> <span>- Teknikexpert med 12 års erfarenhet</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-label">Alla artiklar</div>
-  <div class="grid">
-
-    <a class="card" href="minilux-pro-2-test.html">
+<div class="home-shell">
+<div class="home-main">
+<a class="featured-card" href="minilux-pro-test.html">
+<div class="featured-text">
+<div class="featured-top">
+<div class="featured-author-row"><span class="av-sm">PB</span><span>Per Bergman</span><span class="sep"></span><span>18 jan 2026</span><span class="sep"></span><span>13 min</span></div>
+<span class="pill p-test">Test</span>
+<h2 class="featured-title">MiniLux Pro genomtestad: 200 ANSI och 130 tums bild</h2>
+<p class="featured-excerpt">Vi testade MiniLux Pro i fyra veckor. 200 ANSI Lumen, XGA-upplösning och 180 graders roterbar lins. Är den värd 1 499 kr?</p>
+</div>
+<div class="featured-bottom">
+<div class="featured-rating"><span class="stars">★★★★</span><span class="score">4.3</span></div>
+<span class="read-link">Läs artikeln</span>
+</div>
+</div>
+<div class="featured-img">[ Produktbild ]</div>
+</a>
+<div class="cards-grid">
+<a class="card" href="minilux-pro-2-test.html">
       <div class="card-img ci-test">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-test">Test</span>
-        <div class="card-title">MiniLux Pro 2 testad: 390 ANSI och native 1080P</div>
+        <div class="card-top-row"><span class="pill p-test">Test</span><span class="card-date">5 feb 2026</span></div><div class="card-title">MiniLux Pro 2 testad: 390 ANSI och native 1080P</div>
         <p class="card-excerpt">Tre veckors test. Native 1080P, WiFi 6 och 5W HiFi. Är uppgraderingen till 1 999 kr värd det?</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>5 feb 2026</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div></div>
       </div>
     </a>
-
-    <a class="card" href="minilux-test.html">
+<a class="card" href="minilux-test.html">
       <div class="card-img ci-test">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-test">Test</span>
-        <div class="card-title">MiniLux Pro testad: nätansluten kompakt projektor</div>
+        <div class="card-top-row"><span class="pill p-test">Test</span><span class="card-date">1 feb 2026</span></div><div class="card-title">MiniLux Pro testad: nätansluten kompakt projektor</div>
         <p class="card-excerpt">Kompakt modell till 1 499 kr. 200 ANSI Lumen, 130 tum och över 4 000 appar. Kräver nätström.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>1 feb 2026</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div></div>
       </div>
     </a>
-
-    <a class="card" href="minilux-vs-pro.html">
+<a class="card" href="minilux-vs-pro.html">
       <div class="card-img ci-jmf">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-jmf">Jämförelse</span>
-        <div class="card-title">MiniLux Pro vs MiniLux Pro 2: är 500 kr skillnaden värd det?</div>
+        <div class="card-top-row"><span class="pill p-jmf">Jämförelse</span><span class="card-date">12 feb 2026</span></div><div class="card-title">MiniLux Pro vs MiniLux Pro 2: är 500 kr skillnaden värd det?</div>
         <p class="card-excerpt">200 ANSI mot 390 ANSI. XGA mot native 1080P. Vi jämför båda modellerna sida vid sida.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>12 feb 2026</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div></div>
       </div>
     </a>
-
-    <a class="card" href="projektor-eller-tv.html">
+<a class="card" href="projektor-eller-tv.html">
       <div class="card-img ci-guide">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-guide">Guide</span>
-        <div class="card-title">Projektor eller TV: vilket passar ditt hem bäst?</div>
+        <div class="card-top-row"><span class="pill p-guide">Guide</span><span class="card-date">8 feb 2026</span></div><div class="card-title">Projektor eller TV: vilket passar ditt hem bäst?</div>
         <p class="card-excerpt">En ärlig genomgång av båda alternativen. Storlek per krona, bildkvalitet och flexibilitet.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>8 feb 2026</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div></div>
       </div>
     </a>
-
-    <a class="card" href="ansi-lumen.html">
+<a class="card" href="ansi-lumen.html">
       <div class="card-img ci-tek">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-tek">Teknik</span>
-        <div class="card-title">Vad betyder ANSI Lumen och hur många behöver du?</div>
+        <div class="card-top-row"><span class="pill p-tek">Teknik</span><span class="card-date">25 jan 2026</span></div><div class="card-title">Vad betyder ANSI Lumen och hur många behöver du?</div>
         <p class="card-excerpt">Siffrorna på förpackningen säger sällan hela sanningen. Vi reder ut vad du faktiskt behöver veta.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>25 jan 2026</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div></div>
       </div>
     </a>
-
-    <a class="card" href="forsta-projektor-tips.html">
+<a class="card" href="forsta-projektor-tips.html">
       <div class="card-img ci-tips">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-tips">Tips</span>
-        <div class="card-title">6 saker du bör veta innan du köper din första projektor</div>
+        <div class="card-top-row"><span class="pill p-tips">Tips</span><span class="card-date">14 jan 2026</span></div><div class="card-title">6 saker du bör veta innan du köper din första projektor</div>
         <p class="card-excerpt">Det där som sällan står i produktbeskrivningarna. Våra experter delar med sig av vad de önskar att de visste från början.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>14 jan 2026</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div></div>
       </div>
     </a>
-
-    <a class="card" href="sovrum-projektor.html">
+<a class="card" href="sovrum-projektor.html">
       <div class="card-img ci-guide">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-guide">Guide</span>
-        <div class="card-title">Komplett guide: projicering i sovrummet utan att störa</div>
+        <div class="card-top-row"><span class="pill p-guide">Guide</span><span class="card-date">2 jan 2026</span></div><div class="card-title">Komplett guide: projicering i sovrummet utan att störa</div>
         <p class="card-excerpt">180 graders roterbar lins, hörlurar och keystone. Allt du behöver för en perfekt sovrumsupplevelse.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>2 jan 2026</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div></div>
       </div>
     </a>
-
-    <a class="card" href="wifi-5-vs-6.html">
+<a class="card" href="wifi-5-vs-6.html">
       <div class="card-img ci-tek">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-tek">Teknik</span>
-        <div class="card-title">WiFi 5 vs WiFi 6 i projektorer: spelar det verkligen roll?</div>
+        <div class="card-top-row"><span class="pill p-tek">Teknik</span><span class="card-date">8 jan 2026</span></div><div class="card-title">WiFi 5 vs WiFi 6 i projektorer: spelar det verkligen roll?</div>
         <p class="card-excerpt">Marknadsföringsnummer eller verklig skillnad? Vi testar i verkliga hem.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>8 jan 2026</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div></div>
       </div>
     </a>
-
-    <a class="card" href="utomhusbio.html">
+<a class="card" href="utomhusbio.html">
       <div class="card-img ci-tips">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-tips">Tips</span>
-        <div class="card-title">Utomhusbio på terrassen: en praktisk startguide</div>
+        <div class="card-top-row"><span class="pill p-tips">Tips</span><span class="card-date">12 dec 2025</span></div><div class="card-title">Utomhusbio på terrassen: en praktisk startguide</div>
         <p class="card-excerpt">Film på 120 tum mot husväggen. Enklare än du tror och imponerar alltid på gäster.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>12 dec 2025</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div></div>
       </div>
     </a>
-
-    <a class="card" href="android-projektor.html">
+<a class="card" href="android-projektor.html">
       <div class="card-img ci-tek">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-tek">Teknik</span>
-        <div class="card-title">Android i projektorer: vad du faktiskt kan göra med det</div>
+        <div class="card-top-row"><span class="pill p-tek">Teknik</span><span class="card-date">5 dec 2025</span></div><div class="card-title">Android i projektorer: vad du faktiskt kan göra med det</div>
         <p class="card-excerpt">Streaming, spegling och appar. Vi går igenom vad inbyggt Android innebar i praktiken.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>5 dec 2025</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div></div>
       </div>
     </a>
-
-    <a class="card" href="kontrastratio.html">
+<a class="card" href="kontrastratio.html">
       <div class="card-img ci-tek">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-tek">Teknik</span>
-        <div class="card-title">Kontrastratio i projektorer: vad siffran faktiskt betyder</div>
+        <div class="card-top-row"><span class="pill p-tek">Teknik</span><span class="card-date">3 nov 2025</span></div><div class="card-title">Kontrastratio i projektorer: vad siffran faktiskt betyder</div>
         <p class="card-excerpt">En av de mest använda specifikationerna i marknadsföring och minst förstådda av köpare.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div><span>3 nov 2025</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs pb">PB</div> Per Bergman</div></div>
       </div>
     </a>
-
-    <a class="card" href="projiceringsduk.html">
+<a class="card" href="projiceringsduk.html">
       <div class="card-img ci-guide">[ Bild ]</div>
       <div class="card-body">
-        <span class="pill p-guide">Guide</span>
-        <div class="card-title">Välja projiceringsduk: storlek, material och vad du behöver</div>
+        <div class="card-top-row"><span class="pill p-guide">Guide</span><span class="card-date">25 okt 2025</span></div><div class="card-title">Välja projiceringsduk: storlek, material och vad du behöver</div>
         <p class="card-excerpt">En vit vägg funkar. Men rätt duk gör det bättre. Vi går igenom vad som faktiskt spelar roll.</p>
-        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div><span>25 okt 2025</span></div>
+        <div class="card-foot"><div class="card-auth"><div class="av-xs">AS</div> Anna Svensson</div></div>
       </div>
     </a>
-
-  </div>
 </div>
-
-<footer class="site-footer">
-  <div class="foot-inner">
-    <div class="foot-top">
-      <div>
-        <a class="foot-brand" href="index.html">Teknik<em>Pulsen</em></a>
-        <p class="foot-tagline">Oberoende blogg om elektronik, projektorer och smarta hem. Guider, tester och tips från erfarna experter.</p>
-      </div>
-      <div class="foot-col">
-        <h4>Kategorier</h4>
-        <ul>
-          <li><a href="tester.html">Tester</a></li>
-          <li><a href="guider.html">Guider</a></li>
-          <li><a href="tips.html">Tips</a></li>
-          <li><a href="jamforelser.html">Jämförelser</a></li>
-          <li><a href="teknik.html">Teknik</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Populära artiklar</h4>
-        <ul>
-          <li><a href="minilux-pro-test.html">MiniLux Pro recension</a></li>
-          <li><a href="minilux-pro-2-test.html">MiniLux Pro 2 recension</a></li>
-          <li><a href="minilux-vs-pro.html">MiniLux vs MiniLux Pro</a></li>
-          <li><a href="projektor-eller-tv.html">Projektor eller TV</a></li>
-          <li><a href="ansi-lumen.html">ANSI Lumen guide</a></li>
-          <li><a href="forsta-projektor-tips.html">6 saker innan köp</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="foot-bottom">Oberoende teknikblogg &copy; 2026 TeknikPulsen</p>
-  </div>
-</footer>
+</div>
+<aside class="home-sidebar">
+<div class="sb-block"><div class="sb-title">Mest läst</div><ul class="sb-list">
+<li><a class="sb-item" href="minilux-pro-test.html"><span class="sb-num">01</span><div><div class="sb-item-title">MiniLux Pro test</div><div class="sb-item-meta">Test · 18 jan 2026</div></div></a></li>
+<li><a class="sb-item" href="minilux-pro-2-test.html"><span class="sb-num">02</span><div><div class="sb-item-title">MiniLux Pro 2 test</div><div class="sb-item-meta">Test · 5 feb 2026</div></div></a></li>
+<li><a class="sb-item" href="minilux-vs-pro.html"><span class="sb-num">03</span><div><div class="sb-item-title">MiniLux vs MiniLux Pro</div><div class="sb-item-meta">Jämförelse · 12 feb 2026</div></div></a></li>
+<li><a class="sb-item" href="projektor-eller-tv.html"><span class="sb-num">04</span><div><div class="sb-item-title">Projektor eller TV</div><div class="sb-item-meta">Guide · 8 feb 2026</div></div></a></li>
+<li><a class="sb-item" href="ansi-lumen.html"><span class="sb-num">05</span><div><div class="sb-item-title">ANSI Lumen guide</div><div class="sb-item-meta">Teknik · 25 jan 2026</div></div></a></li>
+</ul></div>
+<div class="sb-block"><div class="sb-title">Ämnen</div><div class="tag-cloud">
+<a class="tag" href="tester.html">Tester</a><a class="tag" href="guider.html">Guider</a><a class="tag" href="tips.html">Tips</a>
+<a class="tag" href="teknik.html">Teknik</a><a class="tag" href="jamforelser.html">Jämförelser</a><a class="tag" href="tester.html">Projektorer</a>
+<a class="tag" href="wifi-5-vs-6.html">WiFi</a><a class="tag" href="ansi-lumen.html">4K</a><a class="tag" href="forsta-projektor-tips.html">Ljud</a>
+<a class="tag" href="minilux-pro-test.html">Budget</a><a class="tag" href="sovrum-projektor.html">Sovrum</a><a class="tag" href="projektor-eller-tv.html">Hemmabio</a>
+</div></div>
+<div class="sb-block newsletter-box"><h3>Nyhetsbrev</h3><p>Få nya tester och guider direkt i inkorgen. Ingen spam.</p>
+<input type="email" placeholder="din@email.se"/><button type="button">Prenumerera</button></div>
+</aside>
+</div>
+<footer class="site-footer"><div class="foot-inner"><div class="foot-top">
+<div><a class="foot-brand" href="index.html"><span class="logo-mark">TP</span><span class="logo-text">TeknikPulsen</span></a>
+<p class="foot-tagline">Oberoende blogg om elektronik, projektorer och smarta hem. Guider, tester och tips från erfarna experter.</p></div>
+<div class="foot-col"><h4>Kategorier</h4><ul>
+<li><a href="tester.html">Tester</a></li><li><a href="guider.html">Guider</a></li><li><a href="tips.html">Tips</a></li>
+<li><a href="jamforelser.html">Jämförelser</a></li><li><a href="teknik.html">Teknik</a></li></ul></div>
+<div class="foot-col"><h4>Populära artiklar</h4><ul>
+<li><a href="minilux-pro-test.html">MiniLux Pro recension</a></li>
+<li><a href="minilux-pro-2-test.html">MiniLux Pro 2 recension</a></li>
+<li><a href="minilux-vs-pro.html">MiniLux vs MiniLux Pro</a></li>
+<li><a href="projektor-eller-tv.html">Projektor eller TV</a></li>
+<li><a href="ansi-lumen.html">ANSI Lumen guide</a></li>
+<li><a href="forsta-projektor-tips.html">6 saker innan köp</a></li></ul></div></div>
+<p class="foot-bottom">Oberoende teknikblogg &copy; 2026 TeknikPulsen</p></div></footer>
 </body>
 </html>
