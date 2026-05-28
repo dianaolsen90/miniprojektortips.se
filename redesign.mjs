@@ -2,7 +2,9 @@ import { readFileSync, writeFileSync, readdirSync } from "fs";
 
 const FONT = `<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>`;
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>`;
+
+const MASTHEAD = `<div class="masthead"><div class="masthead-inner"><span>Oberoende teknikjournalistik sedan 2023</span><span>Ingen reklam, inga sponsrade recensioner</span></div></div>`;
 
 const READ_TIMES = {
   "minilux-pro-test.html": "13 min",
@@ -82,7 +84,8 @@ function nav(active) {
   const items = links
     .map(([href, label]) => `<li><a href="${href}"${href === active ? ' class="active"' : ""}>${label}</a></li>`)
     .join("");
-  return `<nav class="site-nav"><div class="nav-inner">
+  return `${MASTHEAD}
+<nav class="site-nav"><div class="nav-inner">
 <a class="nav-brand" href="index.html"><span class="logo-mark">TP</span><span class="logo-text">TeknikPulsen</span></a>
 <ul class="nav-links">${items}</ul>
 <button class="nav-toggle" type="button" aria-label="Meny"><span></span><span></span><span></span></button>
