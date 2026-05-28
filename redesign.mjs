@@ -4,7 +4,7 @@ const FONT = `<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>`;
 
-const MASTHEAD = `<div class="masthead"><div class="masthead-inner"><span>Oberoende teknikjournalistik sedan 2023</span><span>Ingen reklam, inga sponsrade recensioner</span></div></div>`;
+const MASTHEAD = `<div class="masthead"><div class="masthead-inner"><span>Oberoende projektorguider sedan 2023</span><span>Ingen reklam, inga sponsrade recensioner</span></div></div>`;
 
 const READ_TIMES = {
   "minilux-pro-test.html": "13 min",
@@ -86,7 +86,7 @@ function nav(active) {
     .join("");
   return `${MASTHEAD}
 <nav class="site-nav"><div class="nav-inner">
-<a class="nav-brand" href="index.html"><span class="logo-mark">TP</span><span class="logo-text">TeknikPulsen</span></a>
+<a class="nav-brand" href="index.html"><span class="logo-mark">PG</span><span class="logo-text">projektorguiden.se</span></a>
 <ul class="nav-links">${items}</ul>
 <button class="nav-toggle" type="button" aria-label="Meny"><span></span><span></span><span></span></button>
 <button class="nav-newsletter" type="button">Nyhetsbrev</button>
@@ -95,11 +95,11 @@ function nav(active) {
 
 function footer() {
   return `<footer class="site-footer"><div class="foot-inner"><div class="foot-top">
-<div><a class="foot-brand" href="index.html"><span class="logo-mark">TP</span><span class="logo-text">TeknikPulsen</span></a>
+<div><a class="foot-brand" href="index.html"><span class="logo-mark">PG</span><span class="logo-text">projektorguiden.se</span></a>
 <p class="foot-tagline">Vi granskar, testar och förklarar konsumentelektronik utan reklamlöften. Alla produkter köps med egna medel och testas i verkliga hem.</p></div>
 <div class="foot-col"><h4>Populära artiklar</h4><ul>
-<li><a href="minilux-pro-test.html">MiniLux Pro recension</a></li>
-<li><a href="minilux-pro-2-test.html">MiniLux Pro 2 recension</a></li>
+<li><a href="minilux-pro-test.html">MiniLux Pro omdöme</a></li>
+<li><a href="minilux-pro-2-test.html">MiniLux Pro 2 omdöme</a></li>
 <li><a href="minilux-vs-pro.html">MiniLux Pro vs MiniLux Pro 2</a></li>
 <li><a href="projektor-eller-tv.html">Projektor eller TV</a></li>
 <li><a href="ansi-lumen.html">ANSI Lumen guide</a></li>
@@ -108,7 +108,7 @@ function footer() {
 <li><a href="tester.html">Tester</a></li><li><a href="guider.html">Guider</a></li><li><a href="tips.html">Tips</a></li>
 <li><a href="jamforelser.html">Jämförelser</a></li><li><a href="teknik.html">Teknik</a></li></ul></div></div>
 <div class="foot-bottom">
-<span>&copy; 2026 TeknikPulsen.se, Oberoende teknikblogg</span>
+<span>&copy; 2026 projektorguiden.se, Oberoende teknikblogg</span>
 <div class="foot-bottom-links"><a href="#">Om oss</a><span>·</span><a href="#">Kontakt</a><span>·</span><a href="#">Integritetspolicy</a></div>
 </div></div></footer>
 <script src="site.js"></script>`;
@@ -224,7 +224,7 @@ function buildIndex() {
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>TeknikPulsen | Elektronik, projektorer och smarta hem</title>
+<title>projektorguiden.se | Guider, tester och omdömen om projektorer</title>
 <meta name="description" content="Oberoende blogg om elektronik och projektorer. Guider, tester och tips från erfarna experter."/>
 ${FONT}
 <link rel="stylesheet" href="site.css"/>
@@ -387,7 +387,7 @@ function buildCategoryPage(file) {
   const existing = readFileSync(file, "utf8");
   const titleMatch = existing.match(/<title>([^<]+)<\/title>/);
   const descMatch = existing.match(/<meta name="description" content="([^"]+)"/);
-  const title = titleMatch ? titleMatch[1] : `${meta.title} | TeknikPulsen`;
+  const title = titleMatch ? titleMatch[1] : `${meta.title} | projektorguiden.se`;
   const description = descMatch ? descMatch[1] : meta.subtitle;
 
   return `<!DOCTYPE html>
@@ -403,7 +403,7 @@ ${FONT}
 <body>
 ${nav(file)}
 <div class="cat-hero">
-<div class="cat-hero-logo"><span class="logo-mark">TP</span></div>
+<div class="cat-hero-logo"><span class="logo-mark">PG</span></div>
 <h1>${meta.title}</h1>
 <p>${meta.subtitle}</p>
 </div>

@@ -4,8 +4,8 @@ const FOOT_TAGLINE_OLD =
   "Vi granskar, testar och förklarar konsumentelektronik utan reklamlöften. Alla produkter köps med egna medel och testas i verkliga hem.";
 const FOOT_TAGLINE_NEW =
   "Vi granskar, testar och förklarar konsumentelektronik utan reklamlöften. Alla produkter köps med egna medel och testas i verkliga hem.";
-const COPYRIGHT_OLD = "&copy; 2026 TeknikPulsen.se, Oberoende teknikblogg";
-const COPYRIGHT_NEW = "&copy; 2026 TeknikPulsen.se · Vi testar utan att kompromissa";
+const COPYRIGHT_OLD = "&copy; 2026 projektorguiden.se, Oberoende teknikblogg";
+const COPYRIGHT_NEW = "&copy; 2026 projektorguiden.se · Vi testar utan att kompromissa";
 
 const COMPARISON_TITLE = "MiniLux Pro vs MiniLux Pro 2: vilken ska du välja 2026?";
 const COMPARISON_OLD_FULL =
@@ -17,7 +17,7 @@ const FONT = `<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>`;
 
-const MASTHEAD = `<div class="masthead"><div class="masthead-inner"><span>Oberoende teknikjournalistik sedan 2023</span><span>Ingen reklam, inga sponsrade recensioner</span></div></div>`;
+const MASTHEAD = `<div class="masthead"><div class="masthead-inner"><span>Oberoende projektorguider sedan 2023</span><span>Ingen reklam, inga sponsrade recensioner</span></div></div>`;
 
 const READ_TIMES = {
   "minilux-pro-test.html": "13 min",
@@ -98,7 +98,7 @@ const TEKNIKPULS_ARTICLES = {
   },
 };
 
-/** Older ProjektorTips projector pages - dates before april 2026 */
+/** Older legacy projector pages - dates before april 2026 */
 const LEGACY_PROJECTOR_UPDATES = {
   "keystone-guide.html": { date: "19 april 2026" },
   "projiceringsduk-guide.html": { date: "14 april 2026" },
@@ -334,7 +334,7 @@ function nav(active) {
     .join("");
   return `${MASTHEAD}
 <nav class="site-nav"><div class="nav-inner">
-<a class="nav-brand" href="index.html"><span class="logo-mark">TP</span><span class="logo-text">TeknikPulsen</span></a>
+<a class="nav-brand" href="index.html"><span class="logo-mark">PG</span><span class="logo-text">projektorguiden.se</span></a>
 <ul class="nav-links">${items}</ul>
 <button class="nav-toggle" type="button" aria-label="Meny"><span></span><span></span><span></span></button>
 <a href="nyhetsbrev.html" class="nav-newsletter">Nyhetsbrev</a>
@@ -343,11 +343,11 @@ function nav(active) {
 
 function footer() {
   return `<footer class="site-footer"><div class="foot-inner"><div class="foot-top">
-<div><a class="foot-brand" href="index.html"><span class="logo-mark">TP</span><span class="logo-text">TeknikPulsen</span></a>
+<div><a class="foot-brand" href="index.html"><span class="logo-mark">PG</span><span class="logo-text">projektorguiden.se</span></a>
 <p class="foot-tagline">${FOOT_TAGLINE_NEW}</p></div>
 <div class="foot-col"><h4>Populära artiklar</h4><ul>
-<li><a href="minilux-pro-test.html">MiniLux Pro recension</a></li>
-<li><a href="minilux-pro-2-test.html">MiniLux Pro 2 recension</a></li>
+<li><a href="minilux-pro-test.html">MiniLux Pro omdöme</a></li>
+<li><a href="minilux-pro-2-test.html">MiniLux Pro 2 omdöme</a></li>
 <li><a href="minilux-vs-pro.html">MiniLux Pro vs MiniLux Pro 2</a></li>
 <li><a href="projektor-eller-tv.html">Projektor eller TV</a></li>
 <li><a href="ansi-lumen.html">ANSI Lumen guide</a></li>
@@ -442,7 +442,7 @@ function buildIndex() {
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>TeknikPulsen | Elektronik, projektorer och smarta hem</title>
+<title>projektorguiden.se | Guider, tester och omdömen om projektorer</title>
 <meta name="description" content="Vi granskar och testar konsumentelektronik utan reklamlöften. Guider, tester och tips om projektorer."/>
 ${FONT}
 <link rel="stylesheet" href="site.css"/>
@@ -485,7 +485,7 @@ function buildCategoryPage(file) {
   const existing = readFileSync(file, "utf8");
   const titleMatch = existing.match(/<title>([^<]+)<\/title>/);
   const descMatch = existing.match(/<meta name="description" content="([^"]+)"/);
-  const title = titleMatch ? titleMatch[1] : `${meta.title} | TeknikPulsen`;
+  const title = titleMatch ? titleMatch[1] : `${meta.title} | projektorguiden.se`;
   const description = descMatch ? descMatch[1] : meta.subtitle;
 
   return `<!DOCTYPE html>
@@ -501,7 +501,7 @@ ${FONT}
 <body>
 ${nav(file)}
 <div class="cat-hero">
-<div class="cat-hero-logo"><span class="logo-mark">TP</span></div>
+<div class="cat-hero-logo"><span class="logo-mark">PG</span></div>
 <h1>${meta.title}</h1>
 <p>${meta.subtitle}</p>
 </div>
@@ -540,7 +540,7 @@ function updateTeknikpulsArticle(file) {
   let html = readFileSync(file, "utf8");
   const title = displayTitle(file, data);
 
-  html = html.replace(/<title>[^<]*<\/title>/, `<title>${title} | TeknikPulsen</title>`);
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${title} | projektorguiden.se</title>`);
   html = html.replace(/<h1>[^<]*<\/h1>/, `<h1>${title}</h1>`);
 
   if (file === "minilux-vs-pro.html") {
@@ -575,8 +575,7 @@ function updateLegacyArticle(file, date) {
     const newH1 = add2026(h1Match[1]);
     html = html.replace(/<h1>[^<]*<\/h1>/, `<h1>${newH1}</h1>`);
     html = html.replace(/<title>[^<]*<\/title>/, (m) => {
-      const site = m.includes("ProjektorTips") ? "ProjektorTips.se" : "TeknikPulsen";
-      return `<title>${newH1} | ${site}</title>`;
+      return `<title>${newH1} | projektorguiden.se</title>`;
     });
   }
 
@@ -603,9 +602,9 @@ function replaceSidebarBlock(html) {
   return html;
 }
 
-// Regenerate TeknikPulsen index + category pages
+// Regenerate projektorguiden.se index + category pages
 writeFileSync("index.html", optimizeHtml(buildIndex()), "utf8");
-console.log("Updated index.html (TeknikPulsen)");
+console.log("Updated index.html (projektorguiden.se)");
 
 for (const cat of Object.keys(CATEGORY_META)) {
   writeFileSync(cat, optimizeHtml(buildCategoryPage(cat)), "utf8");
@@ -624,7 +623,7 @@ for (const [file, { date }] of Object.entries(LEGACY_PROJECTOR_UPDATES)) {
   }
 }
 
-// All remaining HTML: global + optimize + sidebar on TeknikPulsen pages with old sidebar
+// All remaining HTML: global + optimize + sidebar on projektorguiden.se pages with old sidebar
 const SKIP = new Set(["index.html", ...Object.keys(CATEGORY_META), ...Object.keys(TEKNIKPULS_ARTICLES)]);
 
 for (const file of readdirSync(".").filter((f) => f.endsWith(".html"))) {
@@ -637,7 +636,7 @@ for (const file of readdirSync(".").filter((f) => f.endsWith(".html"))) {
     html = replaceSidebarBlock(html);
   }
 
-  // Update card-date and sb-item-meta dates for TeknikPulsen article hrefs
+  // Update card-date and sb-item-meta dates for projektorguiden.se article hrefs
   for (const [href, data] of Object.entries(TEKNIKPULS_ARTICLES)) {
     const title = cardTitle(href) || displayTitle(href, data);
     html = html.replace(

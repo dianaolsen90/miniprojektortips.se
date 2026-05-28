@@ -8,11 +8,11 @@ const NEW_TAGLINE =
 const REPLACEMENTS = [
   [
     '<li><a href="minilux-pro-test.html">MiniLux Pro test</a></li>',
-    '<li><a href="minilux-pro-test.html">MiniLux Pro recension</a></li>',
+    '<li><a href="minilux-pro-test.html">MiniLux Pro omdöme</a></li>',
   ],
   [
     '<li><a href="minilux-pro-2-test.html">MiniLux Pro 2 test</a></li>',
-    '<li><a href="minilux-pro-2-test.html">MiniLux Pro 2 recension</a></li>',
+    '<li><a href="minilux-pro-2-test.html">MiniLux Pro 2 omdöme</a></li>',
   ],
   [
     '<li><a href="minilux-vs-pro.html">MiniLux Pro vs MiniLux Pro 2: vilken ska du välja 2026?</a></li>',
