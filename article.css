@@ -133,4 +133,15 @@ h1{font-family:var(--serif);font-size:clamp(2rem,4.5vw,2.75rem);font-weight:400;
   .author-bio{flex-direction:column}
   .rel-card{grid-template-columns:1fr}
   .rel-img{aspect-ratio:16/9;min-height:100px}
+  .score-lbl{width:120px;font-size:13px}
+  .score-val{font-size:13px}
+  .pc{gap:10px}
+  .body{font-size:16px}
+  .intro{font-size:1.05rem}
+  h1{font-size:clamp(1.6rem,6vw,2.75rem)}
+  .spec-table,.cmp-table{font-size:13px}
+  .spec-table td,.cmp-table td,.cmp-table th{padding:9px 12px}
+  .trust-item{min-width:calc(50% - 5px);padding:10px 12px}
+  .article-cta{padding:1.5rem 1.25rem}
+  .meta-bar{gap:8px;font-size:13px}
 }
